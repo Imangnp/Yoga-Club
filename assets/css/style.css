@@ -114,4 +114,37 @@ li a {
     box-sizing: border-box;
   }
 
-  
+  .text-align-plr {
+    text-align: center;
+    padding: 0 25%;
+    line-height: 1.7;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+section, .skill-content {
+    max-width: 65%;
+    margin: auto;
+}
+
+.skill-content  p {
+    color: #1a1818;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Montserrat ;
+    font-size: 17px;
+    font-weight: 600;
+}
+
