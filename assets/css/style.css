@@ -209,4 +209,29 @@ div h3 {
     font-size: 12px;
 }
 
+.plr-35 {
+    padding: 0 35px;
+}
+
+.price {
+    font-weight: 400;
+}
+
+.non-padding {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.lesson-title {
+    font-weight: 400;
+}
+
+.booking-und {
+    text-decoration: none;
+    color: #478AC9;
+    font-size: 14px;
+}
+
+
+
 
