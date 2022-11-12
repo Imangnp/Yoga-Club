@@ -201,6 +201,10 @@ div h3 {
     padding-top: 15px;
 }
 
+.pt-30 {
+    padding-top: 30px;
+}
+
 .white-txt {
     color: white;
 }
@@ -294,4 +298,15 @@ form.subscribe button:hover {
     border-color: 1px solid grey !important;
  }
 
+ .footer {
+    background-color: #000000;
+ }
+
+ .pb-footer {
+    padding-bottom: 60px;
+ }
+
+ .img-pb {
+    padding-bottom: 3px;
+ }
 
