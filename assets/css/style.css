@@ -232,6 +232,66 @@ div h3 {
     font-size: 14px;
 }
 
+.newsletter {
+    background: #e6e6e6;
+    height: 300px ;
+}
 
+.newsletter > .container {
+    max-width: 60%;
+    margin: auto;
+}
+
+.padding-top-50 {
+    padding-top: 50px;
+}
+
+.nl-lable {
+    color: #535353;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.nl-title {
+    color : #1A1A1A;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+form.subscribe input[type=text] {
+    padding: 18px 30px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+}
+
+form.subscribe button {
+    width: 30%;
+    padding: 18px;
+    background: #1A1A1A;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+}
+
+form.subscribe button:hover {
+    background: rgb(57, 57, 57);
+  }
+  
+  form.subscribe::after {
+    clear: both;
+    display: table;
+  }
+
+ input:focus { 
+    outline: none !important;
+    border-color: 1px solid grey !important;
+ }
 
 
