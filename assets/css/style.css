@@ -329,3 +329,72 @@ form.subscribe button:hover {
     line-height: 4;
     font-weight: bold;
  }
+
+
+
+ @media only screen and (max-width: 1200px) {
+    section , .skill-content {
+        max-width: 100%;
+        margin: auto;
+    }
+    .newsletter > .container {
+        max-width: 90%;
+        margin: auto;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .header-column {
+        max-width: 80%;
+    }
+
+    ul {
+        padding: 0 ;
+        margin: 0;
+    }
+    .header-container {
+        padding-top: 120px;
+    }
+
+    .signup-button {
+        background-color: #FFFFFF;
+        padding: 12px 32px;
+        color: #1A1A1A;
+        border-radius: 8px;
+        text-decoration: none;
+    }
+    div > .logo {
+        padding-top: 20px;
+    }
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    section , .skill-content {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .band {
+        height: 600px;
+    }
+
+    .quotation {
+        margin-top: -10px;
+    }
+    .pt-band {
+        padding-top: 15px;
+    }
+
+    .text-align-plr {
+        padding: 0;
+    }
+    .newsletter {
+        background: #e6e6e6;
+        height: 600px ;
+    }
+    .footer > .container {
+        max-width: 90%;
+        margin: auto;
+    }
+    
+  }
