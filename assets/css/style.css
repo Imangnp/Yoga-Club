@@ -75,7 +75,7 @@ li a {
 }
 
 .header-column {
-    max-width: 55%;
+    max-width: 60%;
     text-align: left;
 }
 
@@ -404,6 +404,16 @@ form.subscribe button:hover {
     .footer > .container {
         max-width: 90%;
         margin: auto;
+    }
+    iframe {
+        width: 300px;
+    }
+
+    .learn-first-row .learn-second-row {
+        max-width: 80%;
+        padding: 70px 0 70px 0%;
+        content: "";
+        display: table;
     }
     
   }
