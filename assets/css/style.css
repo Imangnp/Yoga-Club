@@ -331,6 +331,15 @@ form.subscribe button:hover {
  }
 
 
+ iframe {
+    border:0;
+    overflow:hidden;
+    background:none!important;
+    border-radius: 10px 10px;
+    border:0;
+    margin:0;
+ }
+
 
  @media only screen and (max-width: 1200px) {
     section , .skill-content {
@@ -399,6 +408,7 @@ form.subscribe button:hover {
     
   }
 
+
   .background-learn {
     width: 100%;
     height: 1100px;
@@ -414,4 +424,48 @@ form.subscribe button:hover {
     color: #1A1A1A;
     border-radius: 8px;
     text-decoration: none;
+}
+
+.col-learn {
+    display: flex;
+}
+
+.learn-first-row {
+    padding: 70px 0 70px 22%;
+}
+
+.learn-second-row {
+    padding: 40px 4% 70px 20%;
+}
+
+.learn-h1 {
+    font-weight: 600px;
+    padding: 80px 60% 30px 0;
+}
+
+.p-first-row {
+    font-size: 14px;
+    padding: 0 49% 0 7%;
+    text-align: left;
+}
+
+.p-second-row {
+    font-size: 14px;
+    padding: 0 1% 0 5%;
+    text-align: left;
+}
+
+.learn-2image{
+    
+    padding: 55px 27.5% 125px 0;
+ }
+
+ .learn-plr {
+    text-align: center;
+    padding: 42px 42%;
+    line-height: 1.5;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
 }
