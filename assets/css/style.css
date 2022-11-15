@@ -1,5 +1,6 @@
 html {
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 body, header {
     flex-direction: column;
@@ -87,7 +88,23 @@ li a {
     text-decoration: none;
 }
 
+.black-button {
+    background-color: #1A1A1A;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
 .signup-button:hover {
+    background-color: #3a3a3a;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.black-button:hover {
     background-color: #3a3a3a;
     padding: 12px 32px;
     color: #FFFFFF;
@@ -409,14 +426,44 @@ form.subscribe button:hover {
         width: 300px;
     }
 
-    .learn-first-row .learn-second-row {
-        max-width: 80%;
-        padding: 70px 0 70px 0%;
-        content: "";
-        display: table;
+    .col-learn {
+        flex-wrap: wrap;
+        padding: 0%;
     }
-    
+
+    .learn-first-row, .learn-second-row  {
+        
+        padding: 0%;
+       
+    }
+
+    .p-first-row {
+        padding: 0 !important;
+        
+    }
+    .p-second-row {
+        padding: 0%;
+        margin: auto;
+    }
+
+
+
+    .h1-first-row {
+        text-align: left;
+        padding: 0;
+    }
+    .learn-second-row  {
+        padding: 0px;
+    }
+    .h1-second-row {
+        padding: 0%;
+        font-weight: 600;
+        text-align: left;
   }
+  .learn-plr {
+    padding: 40px 40px;
+  }
+}
 
 
   .background-learn {
@@ -440,22 +487,26 @@ form.subscribe button:hover {
     display: flex;
 }
 
+.item-learn {
+    width: 100%;
+}
+
 .learn-first-row {
     padding: 70px 0 70px 22%;
 }
 
 .learn-second-row {
-    padding: 40px 4% 70px 20%;
+    padding: 10px 4% 70px 20%;
 }
 
-.learn-h1 {
-    font-weight: 600px;
-    padding: 80px 60% 30px 0;
+.h1-first-row {
+    padding: 60px 60% 30px 0;
+    font-weight: 600;
 }
 
 .p-first-row {
     font-size: 14px;
-    padding: 0 49% 0 7%;
+    padding: 0 51% 0 7%;
     text-align: left;
 }
 
@@ -463,6 +514,11 @@ form.subscribe button:hover {
     font-size: 14px;
     padding: 0 1% 0 5%;
     text-align: left;
+}
+
+.h1-second-row {
+    padding: 0px 18% 25px 0;
+    font-weight: 600;
 }
 
 .learn-2image{
