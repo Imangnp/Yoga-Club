@@ -94,7 +94,9 @@ li a {
     color: #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
+    border: 0;
 }
+
 
 .signup-button:hover {
     background-color: #3a3a3a;
@@ -565,4 +567,159 @@ form.subscribe button:hover {
 
 .pb-100 {
     padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    width: 900px;
+    height: 657px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    gap: 30px;
+}
+
+.image-container {
+    background: url('../images/sign.jpg') no-repeat center / cover;
+    flex: 0 0 360px;
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.mt-custom {
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.flex-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .gender-container
+.gender-btn-container */
+
+.custom-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.flex-start-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.improve-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.select-improve-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up-btn-margin {
+    margin-top: 60px;
+}
+
+.sign-up-btn:hover {
+    background: #797777;
+}
+
+input[type="email"], input[type="password"] {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    border: 0;
+    width: 282px;
+    height: 40px;
+    padding-left: 7px;
+}
+
+::placeholder {
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6A6A6A;
+}
+
+select[name="month"] {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+select[name="day"], select[name="year"]{
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    height: 40px;
+    border: 0;
+    width: 70px;
 }
