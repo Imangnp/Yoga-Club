@@ -119,6 +119,10 @@ li a {
     color: #FFFFFF;
 }
 
+.sub-heading {
+    font-size: 30px;
+}
+
 .p-t {
     color: #FFFFFF;
     font-size: 18px;
@@ -582,9 +586,9 @@ form.subscribe button:hover {
 .form-container {
     width: 900px;
     height: 657px;
-    margin: 40px auto;
+    margin: 80px auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -642,12 +646,12 @@ form.subscribe button:hover {
 /* .gender-container
 .gender-btn-container */
 
-.custom-btn-container {
+.checkbox-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .input-container {
@@ -661,7 +665,11 @@ form.subscribe button:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
+}
+
+.checkbox-gap {
+    gap: 30px;
 }
 
 .improve-container {
