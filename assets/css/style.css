@@ -19,6 +19,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity:2 ;
+}
+
+.background-light {
+    height: 100%;
+    background: #0000004a;
+    position: absolute;
+    width: 100%;
 }
 
 .logo {
@@ -218,6 +226,10 @@ div h3 {
 
 .left-text-aling {
     text-align: left;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 .pt-15 {
@@ -318,7 +330,7 @@ form.subscribe button:hover {
 
  input:focus { 
     outline: none !important;
-    border-color: 1px solid grey !important;
+    border: 1px solid grey !important;
  }
 
  .footer {
@@ -379,7 +391,28 @@ form.subscribe button:hover {
         max-width: 90%;
         margin: auto;
     }
-  }
+
+    .col-learn {
+        flex-direction: column !important;
+    }
+
+    .image-style {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1780px) {
+    .col-learn {
+        width: 64% !important;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .col-learn {
+        width: 75% !important;
+    }
+}
 
   @media only screen and (max-width: 1300px) {
     iframe {
@@ -394,8 +427,17 @@ form.subscribe button:hover {
     .quotation {
         margin-top: 10px;
     }
-  
-  }
+
+    .col-learn {
+        flex-direction: column !important;
+        width: 45% !important;
+    }
+
+    .image-style {
+        margin-top: 30px;
+    }
+
+}
 
   @media only screen and (max-width: 1000px) {
     iframe {
@@ -462,49 +504,35 @@ form.subscribe button:hover {
         width: 255px;
     }
 
+    .h1 {
+        font-size: 38px;
+    }
+
+    .background-learn, .background-image {
+        height: 800px !important;
+    }
+
+    .item-learn {
+        margin: 0 -40px !important;
+    }
+
     .col-learn {
         flex-wrap: wrap;
-        padding: 0%;
+        justify-content: space-evenly !important;
+        width: 60% !important;
     }
 
-    .learn-first-row, .learn-second-row  {
-        
-        padding: 0%;
-       
-    }
+    .image-style {
+        width: 200px;
+        margin-top: 30px;
+     }
 
-    .p-first-row {
-        padding: 0 !important;
-        
-    }
-    .p-second-row {
-        padding: 0%;
-        margin: auto;
-    }
-
-
-
-    .h1-first-row {
-        text-align: left;
-        padding: 0;
-    }
-    .learn-second-row  {
-        padding: 0px;
-    }
-    .h1-second-row {
-        padding: 0%;
-        font-weight: 600;
-        text-align: left;
-  }
-  .learn-plr {
-    padding: 40px 40px;
-  }
 }
 
 
   .background-learn {
     width: 100%;
-    height: 1100px;
+    height: 1000px;
     background: url('../images/learnpic.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -519,59 +547,48 @@ form.subscribe button:hover {
     text-decoration: none;
 }
 
+.white-button:hover {
+    background-color: #999999;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.column-flex {
+    flex: 1;
+}
+
 .col-learn {
     display: flex;
+    width: 59%;
+    margin: 40px auto;
+    flex: 1;
+    flex-wrap: wrap;
 }
 
 .item-learn {
-    width: 100%;
+    margin: 0 19px;
+    flex: 1;
 }
 
-.learn-first-row {
-    padding: 70px 0 70px 22%;
-}
-
-.learn-second-row {
-    padding: 10px 4% 70px 20%;
-}
-
-.h1-first-row {
-    padding: 60px 60% 30px 0;
+.h1-row {
     font-weight: 600;
-}
-
-.p-first-row {
-    font-size: 14px;
-    padding: 0 51% 0 7%;
     text-align: left;
 }
 
-.p-second-row {
+.p-row {
     font-size: 14px;
-    padding: 0 1% 0 5%;
     text-align: left;
-    margin-bottom: 0%;
+    line-height: 1.6;
 }
-
-.h1-second-row {
-    padding: 0px 18% 25px 0;
-    font-weight: 600;
-}
-
-.learn-2image{
-    
-    padding: 55px 27.5% 125px 0;
- }
 
  .learn-plr {
     text-align: center;
-    padding: 42px 42%;
     line-height: 1.5;
+    margin-bottom: 50px;
 }
 
-.pb-100 {
-    padding-bottom: 100px;
-}
 
 
 
