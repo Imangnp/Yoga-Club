@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity:2 ;
 }
 
 .background-light {
@@ -192,6 +191,7 @@ h2 {
 .band p {
     color: white;
     text-align: left;
+    line-height: 1.5;
 }
 
 .band span {
@@ -655,7 +655,6 @@ form.subscribe button:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity:2 ;
 }
 
 .form-container {
@@ -664,10 +663,9 @@ form.subscribe button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 40px;
-    opacity: 0.9;
 }
 
 .content-container {
