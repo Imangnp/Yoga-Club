@@ -2,7 +2,7 @@
 
 ------
 
-## Yoga club
+# Yoga club
 
 Yoga project is a simple website dedicated to Yoga and lessons on yoga techniques.This website allow users to learn about yoga and its benefits. It also guide the user through  different courses, to whom they apply by signing up to the online classes directly from the website.
 
@@ -12,6 +12,7 @@ We teach classical yoga with an holistic approach to strengthen and harmonise th
 ![web-project](assets/images/screen-shot.png)
 
 
+# Features
 
 **The land page layout is divided in 4 sections:**
 > - ***Navigation bar***
@@ -31,7 +32,7 @@ The header is composed of a full screen image as background and a paragraph on t
 The paragraph shares the key information regarding the purpose of the website, while the CTA button invites the user to sign up to the offering. 
 The CTA triggers a sign up flow, which is valuable to the user as it gives them the ability to sign up and join the online classes.
 
-## Content
+- ## Content
 The contents of the page are divided in 5 sections:
 1. “What we do” explains the benefits of the yoga classes;
 
@@ -60,3 +61,86 @@ It’s important as allowed the user to find all the information helpful to cont
 
 
 ![web-project](assets/images/screen-footer.png)
+
+
+
+**The Learn page layout is divided in 3 sections:**
+> - ***Header***
+> - ***Content***
+> - ***Footer***
+
+- ## Content
+This section is dedicated to the explanation of different yoga position. The content is limited, the user can access to the entire manual after signing up. The sign up process is triggered by clicking on the CTA stated “sign up”. Below this section the user will face the news letter subscription section, where the user can subscribe in order to be up to date on the classes and offers.
+
+
+<!-- here the image comming -->
+
+
+
+**The Sign Up page layout:**
+
+Before accessing to all the content, the user will need to sign up. Any time the user press the CTA button, the sign up window will popup.
+- In the form the user is asked to enter the following data:
+    - Email
+    - Password
+    - Date of birth
+    - Gender
+    - Goals
+    
+
+The user can fill the Email and Password in a free text field.
+While Date of Birth can be entered either by typing in or selecting from the calendar triggered by the drop down menu.
+The gender selection is applied by selecting one of the radio buttons.
+
+The goals can be many, that’s why the user can select multiple check boxes.
+
+Once filled the form, the user is asked to click “Sign up” to complete the process.
+
+
+![web-project](assets/images/Screen-signup.png)
+
+
+# Testing
+
+The website is fully responsive, it adapts to the smallest mobile screens and to the largest desktop ones.
+It also resizes for medium size devices such as iPads and small laptops. 
+
+The breackpoint are set at 490px, 600px, 900px, 1200px, 1300px, 1600px.
+
+It is supported from the following browsers: Google Chrome, Safari, Firefox, Edge.
+## Validator Testing
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+- CSS
+    - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/)
+
+
+# Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+
+# Credits
+
+## Content
+- Text content is gathered from multiple websites dedicated to yoga, such as:  https://chopra.com/articles/healing-emotional-pain-with-yoga ;
+https://osteopathic.org/what-is-osteopathic-medicine/benefits-of-yoga/ ; https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-benefits-of-yoga ; https://www.americansportandfitness.com/products/yoga-certification. 
+- The font Monserrat is a free font from Google Fonts (https://fonts.google.com/specimen/Montserrat)
+- The footer Icons were taken from Material Design library.
+
+## Media
+- The logo of the website is designed in Figma.
+- All the images used in the project are copyright free from [unsplash.com](https://unsplash.com/)
+
+
+# Other General Project Advice
+
+## Languages
+- The website has been coded entirely in HTML and CSS.
+
+
+
+
