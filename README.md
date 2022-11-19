@@ -23,37 +23,37 @@ We teach classical yoga with an holistic approach to strengthen and harmonise th
 - ## Navigation Bar 
 The Nav Bar is located at the top of the page and it hosts the logo on the left, while on the right it hosts the links to other pages of the website: About us, Classes, Learn, Contacts.
 The Nav bar helps the user to clearly navigate through the pages of the website.
-
-
 ![web-project](./assets/images/screen-nav.png)
+
 
 - ## Header
 The header is composed of a full screen image as background and a paragraph on the right with CTA (Call to action) button. 
 The paragraph shares the key information regarding the purpose of the website, while the CTA button invites the user to sign up to the offering. 
 The CTA triggers a sign up flow, which is valuable to the user as it gives them the ability to sign up and join the online classes.
 
+![web-project](./assets/images/screen-header.png)
+
 - ## Content
 The contents of the page are divided in 5 sections:
 1. “What we do” explains the benefits of the yoga classes;
-
-
 ![web-project](./assets/images/screen-we.png)
+
+
 2. “Our Instructors” it’s a presentation of the instructors that will attend the courses;
-
-
 ![web-project](./assets/images/screen-inst.png)
+
+
 3. A section dedicated to review from former students.
-
-
 ![web-project](./assets/images/screen-review.png)
+
+
 4. “Popular classes” is a list of the most featured yoga classes.
-
-
 ![web-project](./assets/images/screen-courses.png)
+
+
 5. News letter subscription: urge the user to subscribe to the newsletter and get info on the classes.
-
-
 ![web-project](./assets/images/screen-news.png)
+
 
 - ## The Footer
 In the footer the user can find contact info and the address of the yoga institute. I also includes links to social media (instagram, Facebook, YouTube) and the location map.
@@ -73,9 +73,6 @@ It’s important as allowed the user to find all the information helpful to cont
 
 - ### Content
 This section is dedicated to the explanation of different yoga position. The content is limited, the user can access to the entire manual after signing up. The sign up process is triggered by clicking on the CTA stated “sign up”. Below this section the user will face the news letter subscription section, where the user can subscribe in order to be up to date on the classes and offers.
-
-
-<!-- here the image comming -->
 
 
 - ## The Sign Up page
@@ -142,9 +139,9 @@ https://osteopathic.org/what-is-osteopathic-medicine/benefits-of-yoga/ ; https:/
 - All the images used in the project are copyright free from [unsplash.com](https://unsplash.com/)
 
 
-# Other General Project Advice
+# Technologies
 
-## Technologies
+## Languages
 - The website has been coded entirely in HTML and CSS.
 
 
