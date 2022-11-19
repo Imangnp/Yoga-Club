@@ -1,4 +1,4 @@
-![CI logo](assets/images/Logo.png)
+![CI logo](/assets/images/Logo.png)
 
 ------
 
@@ -64,20 +64,21 @@ It’s important as allowed the user to find all the information helpful to cont
 
 
 
+- ## The Learn page
+
 **The Learn page layout is divided in 3 sections:**
 > - ***Header***
 > - ***Content***
 > - ***Footer***
 
-- ## Content
+- ### Content
 This section is dedicated to the explanation of different yoga position. The content is limited, the user can access to the entire manual after signing up. The sign up process is triggered by clicking on the CTA stated “sign up”. Below this section the user will face the news letter subscription section, where the user can subscribe in order to be up to date on the classes and offers.
 
 
 <!-- here the image comming -->
 
 
-
-**The Sign Up page layout:**
+- ## The Sign Up page
 
 Before accessing to all the content, the user will need to sign up. Any time the user press the CTA button, the sign up window will popup.
 - In the form the user is asked to enter the following data:
@@ -97,22 +98,24 @@ The goals can be many, that’s why the user can select multiple check boxes.
 Once filled the form, the user is asked to click “Sign up” to complete the process.
 
 
-![web-project](assets/images/Screen-signup.png)
+![web-project](/assets/images/Screen-signup.png)
 
 
 # Testing
 
-The website is fully responsive, it adapts to the smallest mobile screens and to the largest desktop ones.
+The website is fully responsive has been tested by https://ui.dev/amiresponsive. It adapts to the smallest mobile screens and to the largest desktop ones.
 It also resizes for medium size devices such as iPads and small laptops. 
 
 The breackpoint are set at 490px, 600px, 900px, 1200px, 1300px, 1600px.
 
-It is supported from the following browsers: Google Chrome, Safari, Firefox, Edge.
+It is supported from the following browsers: Google Chrome, Safari, Firefox.
 ## Validator Testing
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 - CSS
     - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/)
+- Accessibility
+    - I confirm that the colors and fonts choosen are easy to read and accessible by running it through light house in devtools.
 
 
 # Deployment
@@ -138,7 +141,7 @@ https://osteopathic.org/what-is-osteopathic-medicine/benefits-of-yoga/ ; https:/
 
 # Other General Project Advice
 
-## Languages
+## Technologies
 - The website has been coded entirely in HTML and CSS.
 
 
