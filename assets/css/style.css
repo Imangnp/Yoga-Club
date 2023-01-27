@@ -1,10 +1,12 @@
+/* --- Global style --- */ 
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-body, header {
-    flex-direction: column;
-}
+
+* {
+    box-sizing: border-box;
+  }
 
 body {
     margin : 0 !important;
@@ -12,6 +14,44 @@ body {
     overflow-x: hidden !important;
 }
 
+body, header {
+    flex-direction: column;
+}
+
+/* --- General layout styles --- */
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-family: Montserrat ;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-align-plr {
+    text-align: center;
+    padding: 0 25%;
+    line-height: 1.7;
+}
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+
+/* --- Home page container --- */
+/* Styling Background image of Home page */
 .background-image {
     width: 100%;
     height: 1100px;
@@ -28,6 +68,7 @@ body {
     width: 100%;
 }
 
+/* --- Logo --- */
 .logo {
     padding-top: 15px;
 }
@@ -39,6 +80,7 @@ header, .container {
     text-align: center;
 }
 
+/* --- Navigation bar --- */
 .navbar {
 
     justify-content: space-around;
@@ -56,6 +98,7 @@ li {
     float: left;
 }
 
+/* --- Style the hyperlinks within the navbar --- */
 li a:hover {
     color: #333;
 }
@@ -77,6 +120,7 @@ li a {
     background-color: #DADADA;
 }
 
+/* --- Style the content for the header section --- */
 .header-container {
     margin-left: 20%;
     padding-top: 275px;
@@ -87,53 +131,12 @@ li a {
     text-align: left;
 }
 
-.signup-button {
-    background-color: #1A1A1A;
-    padding: 12px 32px;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.black-button {
-    background-color: #1A1A1A;
-    padding: 12px 32px;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-decoration: none;
-    border: 0;
-}
-
-
-.signup-button:hover {
-    background-color: #3a3a3a;
-    padding: 12px 32px;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.black-button:hover {
-    background-color: #3a3a3a;
-    padding: 12px 32px;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
 .h1 {
     font-size: 50px;
     color: #FFFFFF;
 }
 
-.sub-heading {
-    font-size: 30px;
-    text-align: center;
-    padding: 0 25%;
-    line-height: 1.7;
-}
-
-.p-t {
+.p-header {
     color: #FFFFFF;
     font-size: 18px;
     line-height: 1.5;
@@ -143,29 +146,35 @@ li a {
     margin-top: 35px;
 }
 
-* {
-    box-sizing: border-box;
-  }
-
-  .text-align-plr {
-    text-align: center;
-    padding: 0 25%;
-    line-height: 1.7;
+/* --- Style signup button (in all pages) --- */
+.signup-button {
+    background-color: #1A1A1A;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 0;
 }
 
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.signup-button:hover {
+    background-color: #3a3a3a;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-.column {
-    flex: 1;
-    padding: 20px;
-}
-
+/* --- Style the "What We Do" section --- */
 section, .skill-content {
     max-width: 65%;
     margin: auto;
+}
+
+.sub-heading {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 25%;
+    line-height: 1.7;
 }
 
 .skill-content  p {
@@ -175,12 +184,7 @@ section, .skill-content {
     font-weight: 400;
 }
 
-h2 {
-    font-family: Montserrat ;
-    font-size: 17px;
-    font-weight: 600;
-}
-
+/* --- Style the "review (band)" section --- */
 .band {
     background: linear-gradient(90deg, rgba(42,44,44,1) 0%, rgba(12,12,12,1) 100%);
     height: 373px ;
@@ -207,19 +211,19 @@ div h3 {
     color: white;
 }
 
+.quotation {
+    Font-family: PlayfairDisplay ;
+    Font-size: 100px !important;
+    margin-bottom: -60px;
+    margin-top: 50px ;
+}
+
 .round-img {
     border-radius: 50%;
 }
 
 .pt-band {
     padding-top: 80px;
-}
-
-.quotation {
-    Font-family: PlayfairDisplay ;
-    Font-size: 100px !important;
-    margin-bottom: -60px;
-    margin-top: 50px ;
 }
 
 .text-align {
@@ -235,29 +239,28 @@ div h3 {
     gap: 14px;
 }
 
-.pt-15 {
-    padding-top: 15px;
-}
-
-.pt-30 {
-    padding-top: 30px;
-}
-
 .white-txt {
     color: white;
 }
 
-.sx-size {
-    font-size: 12px;
+/* --- Style the "Popular classes" section --- */
+.price {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.lesson-title {
+    font-weight: 400;
+}
+
+.book-now {
+    text-decoration: none;
+    color: #0060b9;
+    font-size: 14px;
 }
 
 .plr-35 {
     padding: 0 35px;
-}
-
-.price {
-    font-weight: 600;
-    font-size: 20px;
 }
 
 .non-padding {
@@ -265,16 +268,7 @@ div h3 {
     margin: 0px !important;
 }
 
-.lesson-title {
-    font-weight: 400;
-}
-
-.booking-und {
-    text-decoration: none;
-    color: #0060b9;
-    font-size: 14px;
-}
-
+/* --- Style "Newsletter" section --- */
 .newsletter {
     background: #e6e6e6;
 }
@@ -301,6 +295,7 @@ div h3 {
     line-height: 32px;
 }
 
+/* --- Newsletter subscription input --- */
 form.subscribe input[type=text] {
     padding: 18px 30px;
     border: 1px solid grey;
@@ -326,41 +321,46 @@ form.subscribe button:hover {
     background: rgb(57, 57, 57);
   }
   
-  form.subscribe::after {
+form.subscribe::after {
     clear: both;
     display: table;
   }
 
- input:focus { 
+input:focus { 
     outline: none !important;
     border: 1px solid grey !important;
  }
 
- .footer {
+/* --- Footer --- */
+.footer {
     background-color: #000000;
  }
 
- .footer > .container {
+.footer > .container {
     max-width: 60%;
     margin: auto;
 }
 
- .pb-footer {
+.pb-footer {
     padding-bottom: 60px;
  }
 
- .img-pb {
+.sx-size {
+    font-size: 12px;
+}
+
+.icon-pb {
     padding-bottom: 3px;
  }
 
- .menu-f {
+ .footer-menu {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 12px;
     line-height: 3;
  }
 
- .menu-hf {
+.footer-sec-tit {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 16px;
@@ -368,8 +368,8 @@ form.subscribe button:hover {
     font-weight: bold;
  }
 
-
- iframe {
+/* --- Google Maps --- */
+iframe {
     border:0;
     overflow:hidden;
     background:none!important;
@@ -378,14 +378,228 @@ form.subscribe button:hover {
     margin:0;
  }
 
- .copyright {
+ /* --- Copyright Notice --- */
+.copyright {
     background-color: #000000;
     color: #fff;
     font-size: 12px;
  }
 
 
- 
+
+/* --- Learn page container --- */
+/* Styling Background image of learn page */
+.background-learn {
+    width: 100%;
+    height: 1000px;
+    background: url('../images/learnpic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --- See all button that link to all courses --- */
+.white-button {
+    background-color: #ffff;
+    padding: 12px 32px;
+    color: #1A1A1A;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.white-button:hover {
+    background-color: #999999;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* --- Learn page's content --- */
+.col-learn {
+    display: flex;
+    width: 59%;
+    margin: 40px auto;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.item-learn {
+    margin: 0 19px;
+    flex: 1;
+}
+
+.h1-row {
+    font-weight: 600;
+    text-align: left;
+}
+
+.p-row {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+ .learn-plr {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+
+
+/* --- Sign up page container --- */
+/* Styling Background image of Sign up page */
+.background-signup {
+    width: 100%;
+    height: 1100px;
+    background: url('../images/photo-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --- Style the Form in the header of the page --- */
+.form-container {
+    width: 30%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.input-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mt-custom {
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* --- input field for email address and password --- */
+input[type="email"], input[type="password"] {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    border: 0;
+    width: 282px;
+    height: 40px;
+    padding-left: 7px;
+}
+
+::placeholder {
+    font-family: 'Helvetica';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6A6A6A;
+}
+
+/* --- Style select list, for user's date of the birth --- */
+select[name="month"] {
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+select[name="day"], select[name="year"]{
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border-radius: 5px;
+    height: 40px;
+    border: 0;
+    width: 70px;
+}
+
+.flex-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Sign up button --- */
+.sign-up-btn-margin {
+    margin-top: 60px;
+}
+
+.sign-up-btn:hover {
+    background: #797777;
+}
+
+/* --- Radio input and checkbox --- */
+.checkbox-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+}
+
+.flex-start-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+}
+
+.checkbox-gap {
+    gap: 30px;
+}
+
+.improve-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.select-improve-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Media quearies for making the pages responsive in different devices */
 
 @media only screen and (max-width: 1780px) {
     .col-learn {
@@ -395,7 +609,6 @@ form.subscribe button:hover {
     .form-container {
         width: 35% !important;
     }
-
 }
 
 @media only screen and (max-width: 1600px) {
@@ -406,7 +619,6 @@ form.subscribe button:hover {
     .form-container {
         width: 35% !important;
     }
-
 }
 
   @media only screen and (max-width: 1300px) {
@@ -435,7 +647,6 @@ form.subscribe button:hover {
     .form-container {
         width: 42% !important;
     }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -459,7 +670,6 @@ form.subscribe button:hover {
     .form-container {
         width: 50% !important;
     }
-
 }
 
   @media only screen and (max-width: 1000px) {
@@ -552,15 +762,12 @@ form.subscribe button:hover {
      .form-container {
         width: 67% !important;
     }
-
 }
 
 @media only screen and (max-width: 600px) {
-
     .form-container {
         width: 90% !important;
     }
-
 }
 
 @media only screen and (max-width: 490px) {
@@ -576,217 +783,4 @@ form.subscribe button:hover {
     .checkbox-btn {
         flex-flow: wrap;
     }
-
-}
-
-
-
-  .background-learn {
-    width: 100%;
-    height: 1000px;
-    background: url('../images/learnpic.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.white-button {
-    background-color: #ffff;
-    padding: 12px 32px;
-    color: #1A1A1A;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.white-button:hover {
-    background-color: #999999;
-    padding: 12px 32px;
-    color: #FFFFFF;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.column-flex {
-    flex: 1;
-}
-
-.col-learn {
-    display: flex;
-    width: 59%;
-    margin: 40px auto;
-    flex: 1;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-
-.item-learn {
-    margin: 0 19px;
-    flex: 1;
-}
-
-.h1-row {
-    font-weight: 600;
-    text-align: left;
-}
-
-.p-row {
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.6;
-}
-
- .learn-plr {
-    text-align: center;
-    line-height: 1.5;
-    margin-bottom: 50px;
-}
-
-
-
-.background-signup {
-    width: 100%;
-    height: 1100px;
-    background: url('../images/photo-header.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.form-container {
-    width: 30%;
-    margin: 80px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 40px;
-}
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-title {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.mt-custom {
-    margin-top: 20px;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.input-title {
-    font-weight: 600;
-    font-size: 16px;
-}
-
-.flex-center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.checkbox-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    font-size: 12px;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.flex-start-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 3px;
-}
-
-.checkbox-gap {
-    gap: 30px;
-}
-
-.improve-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.select-improve-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.sign-up-btn-margin {
-    margin-top: 60px;
-}
-
-.sign-up-btn:hover {
-    background: #797777;
-}
-
-input[type="email"], input[type="password"] {
-    background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
-    border-radius: 5px;
-    border: 0;
-    width: 282px;
-    height: 40px;
-    padding-left: 7px;
-}
-
-::placeholder {
-    font-family: 'Helvetica';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    color: #6A6A6A;
-}
-
-select[name="month"] {
-    background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
-    border-radius: 5px;
-    width: 120px;
-    height: 40px;
-    border: 0;
-}
-
-select[name="day"], select[name="year"]{
-    background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
-    border-radius: 5px;
-    height: 40px;
-    border: 0;
-    width: 70px;
 }
