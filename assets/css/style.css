@@ -346,7 +346,8 @@ input:focus {
  }
 
 .sx-size {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .icon-pb {
@@ -356,7 +357,7 @@ input:focus {
  .footer-menu {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 3;
  }
 
@@ -454,7 +455,7 @@ iframe {
 .background-signup {
     width: 100%;
     height: 1100px;
-    background: url('../images/photo-header.jpg');
+    background: url('../images/home-background-pic.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

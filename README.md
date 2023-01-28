@@ -95,7 +95,7 @@ The goals can be many, that’s why the user can select multiple check boxes.
 Once filled the form, the user is asked to click “Sign up” to complete the process.
 
 
-![web-project](/assets/images/Screen-signup.png)
+![web-project](/assets/images/screen-signup.png)
 
 
 # Testing
@@ -109,10 +109,10 @@ It is supported from the following browsers: Google Chrome, Safari, Firefox.
 ## Validator Testing
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
-    ![CI logo](./assets/images/Screen-html-testing.png)
+    ![CI logo](./assets/images/screen-html-testing.png)
 - CSS
     - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/)
-    ![CI logo](./assets/images/Screen-css-testing.png)
+    ![CI logo](./assets/images/screen-css-testing.png)
 - Accessibility
     - I confirm that the colors and fonts choosen are easy to read and accessible by running it through light house in devtools.
     ![CI logo](./assets/images/screen-lighthouse.png)

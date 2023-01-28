@@ -14,9 +14,10 @@
 
   <!-- CSS stylesheet --> 
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-
   <!-- Google fonts -->
   <link href="assets/fonts/stylesheet.css" rel="stylesheet" type="text/css">
+  <!-- link to Favicon -->
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
         <!-- Navigation bar -->
         <div class="navbar container">
             <!-- logo -->
-            <div class="logo"> <a href="index.html"> <img src="./assets/images/Logo.svg" alt="logo"> </a>
+            <div class="logo"> <a href="index.html"> <img src="./assets/images/logo.svg" alt="logo"> </a>
             </div>
           <nav>
               <ul>
@@ -68,7 +69,8 @@
                             <div class="input-title">What's your date of birth?</div>
                             <div class="flex-center-container">
                                 <span>
-                                    <select name="month">
+                                    <label for="month"></label>
+                                    <select id="month" name="month">
                                       <option value="01">January</option>
                                       <option value="02">February</option>
                                       <option value="03">March</option>
@@ -84,7 +86,8 @@
                                     </select>
                                   </span>
                                   <span>
-                                    <select name="day">
+                                    <label for="day"></label>
+                                    <select id="day" name="day">
                                       <option value="01">1</option>
                                       <option value="02">2</option>
                                       <option value="03">3</option>
@@ -119,7 +122,8 @@
                                     </select>
                                   </span>
                                   <span>
-                                    <select name="year">
+                                    <label for="year"></label>
+                                    <select id="year" name="year">
                                       <option value="2022">2022</option>
                                       <option value="2021">2021</option>
                                       <option value="2020">2020</option>
@@ -284,7 +288,8 @@
                     </div>
                     <!-- Sign up button -->
                     <div class="sign-up-btn-margin">
-                        <input class="signup-button" type="submit" value="Sign Up">
+                        <label for="submit"></label>
+                        <input class="signup-button" type="submit" id="submit" value="Sign Up">
                     </div>
                 </form>
             </div>
@@ -306,7 +311,8 @@
               <div class="padding-top-50">
                   <!-- label and input field for the email address, and a submit button -->
                   <form class="subscribe">
-                      <input type="text" placeholder="Enter email...">
+                      <label for="email"></label>
+                      <input type="text" id="email" placeholder="Enter email..." required>
                       <button type="submit">Subscribe</button>
                   </form>
               </div>
@@ -322,14 +328,14 @@
                 <!-- Add logo and social network links in the footer  -->
                 <div class="column">
                     <div class="pt-30">
-                      <a href="index.html"> <img src="./assets/images/Logo.svg" alt="Logo"> </a>
+                      <a href="index.html"> <img src="./assets/images/logo.svg" alt="Logo"> </a>
                     </div>
                     <div class="padding-top-50">
                         <span class="white-txt sx-size">Follow us on : &nbsp;&nbsp;&nbsp;&nbsp; </span>
                         <div class="pt-15">
-                            <a target="_blank" href="https://www.instagram.com/"><img src="./assets/images/Insta.png" alt="Instagram"></a>&nbsp;&nbsp;
-                            <a target="_blank" href="https://www.facebook.com/"><img src="./assets/images/Facebook.png" alt="facebook"></a>&nbsp;&nbsp;
-                            <a target="_blank" href="https://www.youtube.com/"><img class="icon-pb" src="./assets/images/youtube.png" alt="Youtube"></a>
+                            <a target="_blank" href="https://www.instagram.com/"><img src="./assets/images/insta.png" alt="Instagram icon"></a>&nbsp;&nbsp;
+                            <a target="_blank" href="https://www.facebook.com/"><img src="./assets/images/facebook.png" alt="facebook icon"></a>&nbsp;&nbsp;
+                            <a target="_blank" href="https://www.youtube.com/"><img class="icon-pb" src="./assets/images/youtube.png" alt="Youtube icon"></a>
                         </div>
                     </div>
                 </div>
@@ -343,10 +349,10 @@
                 <!-- Creates the contact section in the footer -->
                 <div class="column">
                     <div class="white-txt">
-                        <p class="footer-sec-tit">Contact</p>
-                        <p class="sx-size">Call us: </p> <p class="sx-size"> 00 123 475 903</p>
-                        <p class="sx-size">Email us:</p> <p class="sx-size"> yoga@info.com</p>
-                        <p class="sx-size">Whatsapp: </p> <p class="sx-size"> 00123456789</p>
+                      <p class="footer-sec-tit">Contact</p>
+                      <p class="sx-size"><strong>Call us:</strong>  00123475903</p>
+                      <p class="sx-size"><strong>Email us:</strong> yoga@info.com</p>
+                      <p class="sx-size"><strong>Whatsapp:</strong> 00123456789</p>
                     </div>
                 </div>
                     <!-- Add Google Maps -->
