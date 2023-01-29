@@ -518,16 +518,15 @@ iframe {
 /* --- input field for email address and password --- */
 input[type="email"], input[type="password"] {
     background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
     border-radius: 5px;
-    border: 0;
+    border: 1px solid #b9b8b8;
     width: 282px;
     height: 40px;
     padding-left: 7px;
 }
 
 ::placeholder {
-    font-family: 'Helvetica';
+    font-family: 'Montserrat';
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
@@ -536,20 +535,18 @@ input[type="email"], input[type="password"] {
 
 /* --- Style select list, for user's date of the birth --- */
 select[name="month"] {
-    background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    background: #FFFFFF;;
+    border: 1px solid #b9b8b8;
     border-radius: 5px;
     width: 120px;
     height: 30px;
-    border: 0;
 }
 
 select[name="day"], select[name="year"]{
     background: #FFFFFF;
-    box-shadow: inset 0px 0px 0px 1px #b9b8b8;
+    border: 1px solid #b9b8b8;
     border-radius: 5px;
     height: 30px;
-    border: 0;
     width: 70px;
 }
 
@@ -558,6 +555,12 @@ select[name="day"], select[name="year"]{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.select {
+    font-size: 12px;
+    font-family: 'Montserrat';
+    padding-left: 7px;
 }
 
 /* --- Sign up button --- */
@@ -607,13 +610,17 @@ select[name="day"], select[name="year"]{
 
 /* --- 404 page container --- */
 /* Styling Background image of 404 page */
-.background-learn {
+.background-404 {
     width: 100%;
     height: 1100px;
     background: url('../images/404-background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.error-404 {
+    font-size: 100px;
 }
 
 
