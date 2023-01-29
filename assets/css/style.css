@@ -63,7 +63,7 @@ h2 {
 
 .background-light {
     height: 100%;
-    background: #0000004a;
+    background: #00000033;
     position: absolute;
     width: 100%;
 }
@@ -461,6 +461,13 @@ iframe {
     background-size: cover;
 }
 
+.background-popup-light {
+    height: 100%;
+    background: #00000080;
+    position: absolute;
+    width: 100%;
+}
+
 /* --- Style the Form in the header of the page --- */
 .form-container {
     width: 30%;
@@ -596,6 +603,17 @@ select[name="day"], select[name="year"]{
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
+}
+
+/* --- 404 page container --- */
+/* Styling Background image of 404 page */
+.background-learn {
+    width: 100%;
+    height: 1100px;
+    background: url('../images/404-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
