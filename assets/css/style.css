@@ -54,8 +54,8 @@ h2 {
 /* Styling Background image of Home page */
 .background-image {
     width: 100%;
-    height: 1100px;
-    background: url('../images/home-background-pic.jpg');
+    height: 100vh;
+    background: url('../images/background-home.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -123,7 +123,7 @@ li a {
 /* --- Style the content for the header section --- */
 .header-container {
     margin-left: 20%;
-    padding-top: 275px;
+    padding-top: 180px;
 }
 
 .header-column {
@@ -241,6 +241,7 @@ div h3 {
 
 .white-txt {
     color: white;
+    width: 40%;
 }
 
 /* --- Style the "Popular classes" section --- */
@@ -337,13 +338,9 @@ input:focus {
  }
 
 .footer > .container {
-    max-width: 60%;
+    max-width: 85%;
     margin: auto;
 }
-
-.pb-footer {
-    padding-bottom: 60px;
- }
 
 .sx-size {
     font-size: 14px;
@@ -392,8 +389,8 @@ iframe {
 /* Styling Background image of learn page */
 .background-learn {
     width: 100%;
-    height: 1100px;
-    background: url('../images/learn-background-pic.jpg');
+    height: 100vh;
+    background: url('../images/background-learn.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -454,8 +451,8 @@ iframe {
 /* Styling Background image of Sign up page */
 .background-signup {
     width: 100%;
-    height: 1100px;
-    background: url('../images/home-background-pic.jpg');
+    height: 100vh;
+    background: url('../images/background-home.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -471,13 +468,13 @@ iframe {
 /* --- Style the Form in the header of the page --- */
 .form-container {
     width: 30%;
-    margin: 80px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 40px;
+    padding: 30px;
 }
 
 .content-container {
@@ -565,7 +562,7 @@ select[name="day"], select[name="year"]{
 
 /* --- Sign up button --- */
 .sign-up-btn-margin {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .sign-up-btn:hover {
@@ -612,8 +609,8 @@ select[name="day"], select[name="year"]{
 /* Styling Background image of 404 page */
 .background-404 {
     width: 100%;
-    height: 1100px;
-    background: url('../images/404-background.png');
+    height: 980px;
+    background: url('../images/background-404.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -621,12 +618,13 @@ select[name="day"], select[name="year"]{
 
 .error-404 {
     font-size: 100px;
+    color: #fafafa;
 }
 
 
 
 /* Media quearies for making the pages responsive in different devices */
-
+/* Design the web pages to be responsive for desktop screens */
 @media only screen and (max-width: 1780px) {
     /* Column container in Learn page */
     .col-learn {
@@ -667,29 +665,46 @@ select[name="day"], select[name="year"]{
         padding: 0 !important;
     }
 
+    /* Padding-bottom of the web pages */
     .pb-footer {
         padding-bottom: 0 !important;
+    }
+
+    /* Home page contents */
+    .newsletter > .container {
+        max-width: 80%;
+    }
+
+    .white-txt {
+        width: 65%;
     }
 
     .quotation {
         margin-top: 10px;
     }
 
-    /* Imange of poses in Learn page */
+    /* Image of poses in Learn page */
     .image-poses {
         margin-top: 30px;
     }
 }
 
+/* Design the web pages to be responsive for Notebook screens */
 @media only screen and (max-width: 1200px) {
-    .col-learn {
-        flex-direction: column !important;
+    /* Home page header */
+    .background-image, .background-learn {
+        height: 600px;
     }
 
-    .form-container {
-        width: 50% !important;
+    .header-container {
+        padding-top: 80px;
     }
 
+    .h1 {
+        font-size: 46px;
+    }
+
+    /* Home page contents */
     section , .skill-content {
         max-width: 100%;
         margin: auto;
@@ -699,30 +714,74 @@ select[name="day"], select[name="year"]{
         margin: auto;
     }
 
+    .p-newsletter {
+        font-size: 14px;
+    }
+
+    .white-txt {
+        width: inherit;
+    }
+
+    /* Changing the direction of the Learn page to column */
+    .col-learn {
+        flex-direction: column !important;
+    }
+
     .image-poses {
         margin-top: 30px;
     }
+
+
+    /* Place the form in background image */
+    .background-signup {
+        height: 720px;
+    }
+
+    .form-container {
+        width: 50% !important;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .input[type="email"], input[type="password"] {
+        height: 30px;
+    }
+
+    .sign-up-btn-margin {
+        margin-top: 35px;
+    }
 }
 
+/* Design the web pages to be responsive for diffrent Tablet screens */
   @media only screen and (max-width: 1000px) {
+    .background-image, .background-learn, .background-signup {
+        height: 700px;
+    }
+
     iframe {
         width: 210px;
     }
   }
 
 @media only screen and (max-width: 900px) {
+    /* Adjusting background images */
+    .background-learn, .background-image {
+        height: 550px !important;
+    }
+
+    /* Making the header and navbar responsive */
     .header-column {
-        max-width: 80%;
+        max-width: 50%;
+    }
+
+    .header-container {
+        padding-top: 20px;
     }
 
     ul {
         padding: 0 ;
         margin: 0;
         font-size: 16px;
-    }
-
-    .header-container {
-        padding-top: 35px;
     }
 
     div > .logo {
@@ -743,9 +802,14 @@ select[name="day"], select[name="year"]{
         color: #1A1A1A;
     }
 
+    /* Making the Home page content responsive */
     section , .skill-content {
         max-width: 90%;
         margin: auto;
+    }
+
+    .h1 {
+        font-size: 34px;
     }
 
     .band {
@@ -764,27 +828,25 @@ select[name="day"], select[name="year"]{
         padding: 0;
     }
 
-    .newsletter {
-        background: #e6e6e6;
+    .newsletter > .container {
+        max-width: 60%;
     }
 
+    /* Refactor footer's width to place it better in smaller screens */
     .footer > .container {
         max-width: 90%;
         margin: auto;
+    }
+
+    .padding-top-50 {
+        padding: 20px 0 10px 0;
     }
 
     iframe {
         width: 255px;
     }
 
-    .h1 {
-        font-size: 38px;
-    }
-
-    .background-learn, .background-image {
-        height: 620px !important;
-    }
-
+    /* Learn page's content */
     .item-learn {
         margin: 0 -40px !important;
     }
@@ -800,29 +862,28 @@ select[name="day"], select[name="year"]{
         margin-top: 30px;
      }
 
+     /* Sign up form */
      .form-container {
         width: 67% !important;
     }
 }
 
 @media only screen and (min-width: 490px) and (max-width: 600px) {
+    /* Sign up form */
     .form-container {
         width: 90% !important;
     }
 }
 
+/* Design the web pages to be responsive for Mobile screens */
 @media only screen and (min-width: 290px) and (max-width: 490px) {
-    .form-container {
-        width: 95% !important;
-        margin: 40px auto;
-    }
-
-    .background-signup {
-        height: 890px !important;
-    }
-
+    /* Navbar and Home page's content */
     li a {
         padding: 8px 8px;
+    }
+
+    .header-column {
+        max-width: 70%;
     }
 
     .column {
@@ -833,8 +894,22 @@ select[name="day"], select[name="year"]{
         height: 580px;
     }
 
+    .newsletter > .container {
+        max-width: 94%;
+    }
+
     .padding-top-50 {
         padding: 20px 0 16px 0;
+    }
+
+    /* Sign up form and its background */
+    .background-signup {
+        height: 800px !important;
+    }
+
+    .form-container {
+        width: 95% !important;
+        margin: 40px auto;
     }
 
     .checkbox-btn {
