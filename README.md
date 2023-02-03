@@ -23,6 +23,7 @@ ___
     * [Learn Page](#learn-page)
     * [Sign Up Page](#signup-page)  
     * [Thank You page](#thank-you-page)
+    * [Subscription](#subscription)
     * [404 Error page](#404-error-page)
 - [Testing](#testing)
     * [Accessibility](#accessibility)
@@ -159,36 +160,74 @@ After successfully completing the Sign Up form, you will be redirected to the Th
 The Thank You page is an important part of the user experience and is designed to increase your satisfaction and build trust with the service.
 ![Thank You](/assets/images/screen-thankyou.png)
 
+## Subscription page
+Upon entering their email address in the provided box and clicking the "Subscribe" button, users are redirected to the subscription confirmation page. This page informs users of successful subscription and states that a confirmation email will be received. Additionally, a button is provided on the page which, when clicked, redirects users back to the Home page.
+![Subscription](/assets/images/screen-subscription.png)
+
 ## 404 Error page
 A 404 page is a webpage displayed when a user attempts to access a non-existent or broken link on a website. The purpose of a 404 page is to inform the user that the requested page could not be found and provide options for them to navigate the website and find the information they were looking for. A well-designed 404 page can also help maintain a positive user experience by providing links to popular pages, a search bar, or a contact form for assistance.
 ![404](/assets/images/screen-404.png)
 
 
 # Testing
+## Accessibility
+Accessibility was run during design on Figma with the plug in “Use contrast” in order to make sure the color contrast was meeting the WCAG standards.
+![Accessibility](./assets/images/screenshot-accessibility-text.png)
+![Accessibility](./assets/images/screenshot-accessibility-heading.jpeg)
+![Accessibility](./assets/images/screenshot-accessibility-footer.jpeg)
 
-The website is fully responsive has been tested by https://ui.dev/amiresponsive. It adapts to the smallest mobile screens and to the largest desktop ones.
+## Responsiveness
+The website is fully responsive has been tested by https://ui.dev/amiresponsive and https://responsivedesignchecker.com . It adapts to the smallest mobile screens and to the largest desktop ones.
 It also resizes for medium size devices such as iPads and small laptops. 
 
 The breackpoint are set at 490px, 600px, 900px, 1200px, 1300px, 1600px.
 
-It is supported from the following browsers: Google Chrome, Safari, Firefox.
-## Validator Testing
+### - Desktop screen
+![Desktop-screen](/assets/images/screen-desktop.png)
+
+### - Notebook screen
+![Notebook-screen](/assets/images/screen-notebook.png)
+
+### - Tablete screen
+![Tablete-screen](/assets/images/screen-tablet.png)
+
+### - Mobile screen
+![Mobile-screen](/assets/images/screen-mobile.png)
+
+The website is supported from the following browsers: Google Chrome, Safari, Firefox.
+
+## Validators Testing
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
     ![Validatot-HTML](./assets/images/screen-html-testing.png)
+
 - CSS
     - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/)
     ![Validator-CSS](./assets/images/screen-css-testing.png)
-- Accessibility
+
+- Accessibility and performance
     - I confirm that the colors and fonts choosen are easy to read and accessible by running it through light house in devtools.
     ![Validator-lighthouse](./assets/images/screen-lighthouse.png)
 
 ## Manual Testing
+### Buttons
 | **Feature** | **Test Case** | **Expected** | **Result** |
 |:-----------:|:-------------:|:------------:|:----------:|
 | Start Now button | Click it | Go to Sign Up page when user click it | Works as expected |
+| Sign Up button | Fill out the form and click Sign Up button | Go to Thank You page | Works as expected |
+| Sign Up button | Click Sign Up button without filling out the form | "please fill out this field" popup message | Works as expected |
+| Subscribe button | Enter email and click Subscribe button | Go to Subscription page | Works as expected |
+| Subscribe button | Click Subscribe button without entring email | "please fill out this field" popup message | Works as expected |
+| Book now text button | Click it | Go to Sign Up page | Works as expected |
 
-
+### In the Footer
+| **Feature** | **Test Case** | **Expected** | **Result** |
+|:-----------:|:-------------:|:------------:|:----------:|
+| Logo | Click it | Go to Home page | Works as expected |
+| Courses text button | Click it | Go to "Popular classes" section in Home page | Works as expected |
+| About us text button | Click it | Go to "What we do" section in Home page | Works as expected |
+| Learn text button | Click it | Go to Learn page | Works as expected |
+| Social network icons | Click it | Open another window to the relative website | Works as expected |
 
 # Technologies
 - Languages: 
@@ -229,28 +268,59 @@ https://osteopathic.org/what-is-osteopathic-medicine/benefits-of-yoga/ ; https:/
 - The footer Icons were taken from Material Design library.
 
 ## Media
-- The logo of the website is designed in Figma.
-- All the images used in the project are copyright free from [unsplash.com](https://unsplash.com/)
+- The logo of the website is designed in [Figma](https://www.figma.com/).
+- [Favicon.io](https://favicon.io) tool used to create favicon.
+- All the images used in the project are copyright free from [unsplash.com](https://unsplash.com/):
+   - https://unsplash.com/photos/F2qh3yjz6Jk
+   - https://unsplash.com/photos/I2YSmEUAgDY
+   - https://unsplash.com/photos/dlxNvA7p
+   - https://unsplash.com/photos/-nZynZmR3Ls
+   - https://unsplash.com/photos/CEGtclvmIII
+   - https://unsplash.com/photos/rX8gBeg2WM0
+   - https://unsplash.com/photos/opxOfzge2Tg
+   - https://unsplash.com/photos/WpygHZIJwaM
+   - https://unsplash.com/photos/Vz0RbclzG_w
+   - https://unsplash.com/photos/UUf5nxhEhAs
+   - https://unsplash.com/photos/GaprWyIw66o
+   - https://unsplash.com/photos/GaprWyIw66o
+
+
+## Code
+- The iFrame code for the map located in the footer is sourced from [Maps](https://www.google.se/maps/)
+- In the Sign Up form, Date select dropdown options are sourced from https://gist.github.com/aleksblago/6102782
+- The background color of the review band was created with a gradient effect using the help of [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient)
+- For assistance with various CSS issues used Code Institute community's Slack channel and [W3C Schools](https://www.w3schools.com/)
+
 
 
 # Future scope
+- A popup window will be created for the Sign Up form, its confirmation message, and the Newsletter subscription.
+- Anchor elements will be added to the contact options text in the footer to make them clickable links for quick access.
 
 
 # Bugs
-### Problem:
+### - Problem:
 In the footer of some pages, the menu buttons like "About Us" were pointing to a broken link.
 ### Solution:
 To fix this, I updated the href value from "#about-us" to "index.html#about-us".
 Additionally, I added a 404 error page for handling any potential broken links in the future.
 
-### Problem:
+### - Problem:
 To make the website responsive.
 Whenever I attempted to make a section responsive, another section would lose its responsiveness.
 ### Solution:
 My mentor suggested removing a majority of the margins and padding, and using flexbox as a solution.
 
+### - Problem:
+After creating a 404 error page on GitHub, it was not visible in the work place and pushing changes resulted error: "Updates were rejected because the remote repository contains work that is not present locally."
+### Solution:
+I perform a `git pull` in my local terminal prompt then performed `git config pull.rebase false`. That fetched the latest changes from the remote repository and merge them with the local version.
 
 # Acknowledgements
+- The Slack community is always available and provides helpful support 24/7 to resolve any issues.
+- Ger Tobin, Code Institute tutor, for his precious CSS tips and support.
+- My mentor Akshat Garg for his support and guidance during the development of this project.
+- My wife for her invaluable assistance with Figma.
 
 
 [Back to Top](#)

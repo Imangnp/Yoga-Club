@@ -82,7 +82,6 @@ header, .container {
 
 /* --- Navigation bar --- */
 .navbar {
-
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -645,6 +644,10 @@ select[name="day"], select[name="year"]{
 
     .form-container {
         width: 35% !important;
+    }
+
+    .white-txt {
+        width: 100%;
     }
 }
 
